@@ -1,7 +1,84 @@
+/* fonst import  */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 /* common css start */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Jost", sans-serif;
+}
+p,
+i {
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
 /* common css end */
+/* nav section start  */
+.navbar-brand {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #ffff;
+}
+.navbar-brand span {
+  color: #f75023;
+}
+.nav-item {
+  padding: 10px 20px;
+}
+.nav-item:last-child .nav-link {
+  border: 1px solid #f75023;
+  border-radius: 25px;
+  padding: 5px 30px;
+  color: #ffff;
+}
+
+.nav-link {
+  color: #ffff;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 500;
+  line-height: 30px;
+  transition: 0.5s all;
+}
+.nav-link:hover,
+.active {
+  color: #f75023;
+}
+.active {
+  color: #f75023;
+}
+.header {
+  background: url("../img/slider/2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/* nav section end  */
+/* banner section start */
+.banner h3 {
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 500;
+  color: #f75023;
+}
+.banner h2 {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 500;
+  color: #fff;
+}
+/* banner section end  */
