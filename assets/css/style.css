@@ -64,11 +64,13 @@ ul {
   position: relative;
   overflow: hidden;
   transition: 0.5s all;
+  z-index: 1;
 }
 .nav-item:last-child .nav-link::before {
   position: absolute;
   content: "";
   opacity: 1;
+  z-index: -1;
   clip-path: inset(100% 0 0 0);
   top: 0;
   left: 0;
@@ -131,17 +133,13 @@ ul {
   transition: 0.5s all;
   overflow: hidden;
   position: relative;
-  /* position: relative;
-  background: #fff;
-  padding: 25px 50px;
-  font-size: 1em;
-  text-transform: uppercase;
-  transition: 0.9s;
-  border-radius: 5px; */
+  z-index: 1;
 }
 .banner a.banner-btn::before {
   position: absolute;
   content: "";
+  opacity: 1;
+  z-index: -1;
   top: 0;
   left: 0;
   right: 0;
