@@ -1,10 +1,14 @@
 /* fonst import  */
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 /* common css start */
-* {
+:root {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  --color-primary: #f75023;
+  --color-secondary: #1cbe59;
+  --color-white: #fff;
+  --color-gray: #2b2d33;
 }
 h1,
 h2,
@@ -35,20 +39,13 @@ ul {
   color: #ffff;
 }
 .navbar-brand span {
-  color: #f75023;
+  color: var(--color-primary);
 }
 .nav-item {
   padding: 10px 20px;
 }
-.nav-item:last-child .nav-link {
-  border: 1px solid #f75023;
-  border-radius: 25px;
-  padding: 5px 30px;
-  color: #ffff;
-}
-
 .nav-link {
-  color: #ffff;
+  color: var(--color-white);
   font-size: 16px;
   text-transform: capitalize;
   font-weight: 500;
@@ -57,11 +54,39 @@ ul {
 }
 .nav-link:hover,
 .active {
-  color: #f75023;
+  color: var(--color-primary);
 }
-.active {
-  color: #f75023;
+.nav-item:last-child .nav-link {
+  border: 1px solid var(--color-primary);
+  border-radius: 25px;
+  padding: 5px 30px;
+  color: var(--color-white);
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s all;
 }
+.nav-item:last-child .nav-link::before {
+  position: absolute;
+  content: "";
+  opacity: 1;
+  clip-path: inset(100% 0 0 0);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--color-primary);
+  transition: 0.5s all;
+}
+.nav-item:last-child .nav-link:hover:before {
+  clip-path: inset(0 0 0 0);
+}
+.nav-item:last-child .nav-link:hover {
+  color: var(--color-white);
+}
+
+/* .active {
+  color: var(--color-primary);
+} */
 .header {
   background: url("../img/slider/2.jpg");
   background-size: cover;
@@ -73,13 +98,13 @@ ul {
   font-size: 25px;
   line-height: 35px;
   font-weight: 500;
-  color: #f75023;
+  color: var(--color-primary);
 }
 .banner h2 {
   font-size: 60px;
   line-height: 78px;
   font-weight: 500;
-  color: #fff;
+  color: var(--color-white);
 }
 .banner .job span,
 .banner .job .country {
@@ -88,33 +113,86 @@ ul {
   font-weight: 500;
 }
 .banner .job span {
-  color: #1cbe59;
+  color: var(--color-secondary);
 }
 .banner .job .country {
   color: #f0c45c;
 }
 .banner a.banner-btn {
   padding: 10px 32px;
-  border: 1px solid #f75023;
+  border: 1px solid var(--color-primary);
   border-radius: 50px;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
-  color: #fff;
+  display: inline-block;
+  color: var(--color-white);
   text-transform: capitalize;
   transition: 0.5s all;
+  overflow: hidden;
+  position: relative;
+  /* position: relative;
+  background: #fff;
+  padding: 25px 50px;
+  font-size: 1em;
+  text-transform: uppercase;
+  transition: 0.9s;
+  border-radius: 5px; */
 }
-.banner a.banner-btn:hover {
-  background: #f75023;
+.banner a.banner-btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: var(--color-white);
+  clip-path: inset(0 0 0 0);
+  background: var(--color-primary);
+  transition: 0.5s all;
 }
+.banner a.banner-btn:hover:before {
+  clip-path: inset(100% 0 0 0);
+}
+/* .banner a.banner-btn:hover {
+  color: black;
+} */
 .banner-social-icon li a i {
-  color: #fff;
+  color: var(--color-white);
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
   transition: 0.5s all;
 }
 .banner-social-icon li a:hover i {
-  color: #f75023;
+  color: var(--color-primary);
 }
 /* banner section end  */
+/* process section start  */
+#process {
+  background: var(--color-gray);
+}
+#process .card {
+  background: transparent;
+  transition: 0.5s all;
+}
+#process .card i {
+  font-size: 30px;
+  line-height: 1.5;
+  color: var(--color-secondary);
+}
+#process .card:hover {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+#process .card:hover i {
+  color: var(--color-primary);
+}
+#process .card .card-title {
+  font-size: 24px;
+  line-height: 31px;
+}
+#process .card .card-text {
+  font-size: 16px;
+  line-height: 30px;
+}
+/* process section end  */
