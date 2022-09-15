@@ -399,3 +399,28 @@ img {
   display: block;
 }
 /* portfolio section end  */
+/* footer section start  */
+footer {
+  background: #3f4453;
+  color: #b9b5c9;
+}
+.copyright {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+}
+footer a {
+  color: #b9b5c9;
+  transition: 0.5s all;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+}
+footer .footer-nav a {
+  transition: 0.5s all;
+  padding: 0 15px;
+}
+footer a:hover {
+  color: var(--color-primary);
+}
+/* footer section end  */
