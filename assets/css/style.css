@@ -29,6 +29,59 @@ a {
 ul {
   list-style: none;
 }
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.sub-title {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+.section-title {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--color-white);
+}
+.common-btn {
+  padding: 10px 32px;
+  border: 1px solid var(--color-primary);
+  border-radius: 50px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  display: inline-block;
+  color: var(--color-white);
+  text-transform: capitalize;
+  transition: 0.5s all;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.common-btn::before {
+  position: absolute;
+  content: "";
+  opacity: 1;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: var(--color-white);
+  clip-path: inset(0 0 0 0);
+  background: var(--color-primary);
+  transition: 0.5s all;
+}
+.common-btn:hover:before {
+  clip-path: inset(100% 0 0 0);
+}
+.common-btn:hover {
+  color: var(--color-white);
+}
 /* common css end */
 /* nav section start  */
 .navbar-brand {
@@ -36,6 +89,9 @@ ul {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
+  color: #ffff;
+}
+.navbar-brand:hover {
   color: #ffff;
 }
 .navbar-brand span {
@@ -106,6 +162,7 @@ ul {
   font-size: 60px;
   line-height: 78px;
   font-weight: 500;
+  text-transform: capitalize;
   color: var(--color-white);
 }
 .banner .job span,
@@ -120,41 +177,7 @@ ul {
 .banner .job .country {
   color: #f0c45c;
 }
-.banner a.banner-btn {
-  padding: 10px 32px;
-  border: 1px solid var(--color-primary);
-  border-radius: 50px;
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 500;
-  display: inline-block;
-  color: var(--color-white);
-  text-transform: capitalize;
-  transition: 0.5s all;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-}
-.banner a.banner-btn::before {
-  position: absolute;
-  content: "";
-  opacity: 1;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  color: var(--color-white);
-  clip-path: inset(0 0 0 0);
-  background: var(--color-primary);
-  transition: 0.5s all;
-}
-.banner a.banner-btn:hover:before {
-  clip-path: inset(100% 0 0 0);
-}
-/* .banner a.banner-btn:hover {
-  color: black;
-} */
+
 .banner-social-icon li a i {
   color: var(--color-white);
   font-size: 16px;
@@ -194,3 +217,48 @@ ul {
   line-height: 30px;
 }
 /* process section end  */
+/* about section start  */
+#about {
+  background: var(--color-gray);
+}
+#about {
+  background: var(--color-gray);
+}
+
+.about-sucess,
+.about-project {
+  background: #4b4f5c;
+  padding: 10px;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.about-sucess {
+  top: 130px;
+  left: 0px;
+}
+.about-sucess h3,
+.about-project h3 {
+  font-size: 50px;
+  line-height: 65px;
+  font-weight: 500;
+}
+.about-sucess h3 {
+  color: var(--color-secondary);
+}
+.about-sucess span,
+.about-project span {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 500;
+}
+.about-project {
+  right: 35px;
+  bottom: 75px;
+}
+.about-project h3 {
+  color: #f0c45c;
+}
+
+/* about section end  */
