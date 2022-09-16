@@ -399,6 +399,17 @@ img {
   display: block;
 }
 /* portfolio section end  */
+/* skill section start  */
+#skill .skill-content {
+  padding-right: 100px;
+  margin-top: 140px;
+}
+#skill .skill-content .progress-box .progress-heading .number {
+  margin-right: 30%;
+  display: inline-block;
+  color: var(--color-primary);
+}
+/* skill section end  */
 /* footer section start  */
 footer {
   background: #3f4453;
