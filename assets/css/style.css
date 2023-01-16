@@ -229,7 +229,13 @@ img {
 /* #about {
   background: var(--color-gray);
 } */
-
+#about .brush-1 {
+  top: -85px;
+  left: -25px;
+}
+#about .brush-2 {
+  right: 0px;
+}
 .about-sucess,
 .about-project {
   background: #4b4f5c;
@@ -267,7 +273,21 @@ img {
 }
 
 /* about section end  */
+
 /* portfolio section start  */
+
+#portfolio .brush-1 img,
+#portfolio .brush-2 img {
+  width: auto;
+}
+#portfolio .brush-1 {
+  top: 130px;
+  left: 20px;
+}
+#portfolio .brush-2 {
+  right: -80px;
+  bottom: -10px;
+}
 ::selection {
   color: #fff;
   background: #007bff;
@@ -411,6 +431,15 @@ img {
 }
 /* skill section end  */
 /* services section start  */
+
+#service .brush-1 {
+  left: -120px;
+  top: 50px;
+}
+#service .brush-2 {
+  top: -130px;
+  right: -104px;
+}
 .timeline {
   position: relative;
   padding: 10px;
@@ -554,6 +583,27 @@ img {
   border-bottom: 10px solid transparent;
 }
 /* services section end  */
+/* newsletter section start  */
+.newsletter {
+  background: linear-gradient(
+      rgba(138, 115, 241, 0.9),
+      rgba(138, 115, 241, 0.9)
+    ),
+    url(../img/subscribe/dots.jpg);
+}
+.subscribe-btn {
+  background: var(--color-primary);
+  padding: 20px 32px;
+  border: 1px solid var(--color-primary);
+  border-radius: 0px 10px 10px 0px;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--color-white);
+  text-transform: capitalize;
+  transition: 0.5s all;
+}
+/* newsletter section end  */
 /* footer section start  */
 footer {
   background: #3f4453;
