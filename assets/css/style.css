@@ -169,7 +169,7 @@ img {
   color: var(--color-primary);
 }
 .banner h2 {
-  font-size: 60px;
+  font-size: 50px;
   line-height: 78px;
   font-weight: 500;
   text-transform: capitalize;
@@ -206,7 +206,6 @@ img {
   position: absolute;
   box-shadow: 24px 0 72px rgb(54 32 152 / 30%);
   animation: jumpInfinite 3s infinite;
-
 }
 .banner .skills svg {
   position: absolute;
@@ -236,7 +235,6 @@ img {
   background-color: #fff;
   right: 40px;
   top: 450px;
-
 }
 @keyframes jumpInfinite {
   0% {
@@ -660,6 +658,14 @@ img {
 /* newsletter section end  */
 /* contact section start  */
 
+#contact .brush-1 {
+  top: 0px;
+  left: 0px;
+}
+#contact .brush-2 {
+  right: 0px;
+  bottom: 0px;
+}
 #contact .icon {
   background: #fedfd7;
   height: 88px;
