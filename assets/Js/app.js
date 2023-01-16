@@ -54,3 +54,4 @@ function preview(element) {
     document.querySelector("body").style.overflow = "auto"; //show the scroll bar on body
   };
 }
+

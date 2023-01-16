@@ -198,6 +198,57 @@ img {
 .banner-social-icon li a:hover i {
   color: var(--color-primary);
 }
+.banner .skills {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  position: absolute;
+  box-shadow: 24px 0 72px rgb(54 32 152 / 30%);
+  animation: jumpInfinite 3s infinite;
+
+}
+.banner .skills svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+}
+.banner .skills.react {
+  background-color: #282c34;
+  top: 100px;
+  left: 100px;
+}
+
+.banner .skills.js {
+  top: 450px;
+  left: 100px;
+  background-color: #f7df1e;
+}
+.banner .skills.nodeJs {
+  background-color: #233056;
+  right: 40px;
+  top: 100px;
+}
+.banner .skills.mongodb {
+  background-color: #fff;
+  right: 40px;
+  top: 450px;
+
+}
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
 /* banner section end  */
 /* process section start  */
 #process {
