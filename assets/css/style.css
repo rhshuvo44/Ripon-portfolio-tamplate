@@ -13,6 +13,9 @@
 body {
   background: var(--color-gray);
 }
+button {
+  background: transparent;
+}
 h1,
 h2,
 h3,
@@ -604,6 +607,47 @@ img {
   transition: 0.5s all;
 }
 /* newsletter section end  */
+/* contact section start  */
+
+#contact .icon {
+  background: #fedfd7;
+  height: 88px;
+  width: 88px;
+  line-height: 1.5;
+  border-radius: 50%;
+  text-align: center;
+}
+#contact .icon i {
+  font-size: 24px;
+  line-height: 1.5;
+}
+#contact .map-icon {
+  background: #fedfd7;
+}
+#contact .email-icon {
+  background: #ddf5e6;
+}
+#contact .phone-icon {
+  background: #ece8fd;
+}
+#contact .map-icon i {
+  color: var(--color-primary);
+}
+#contact .email-icon i {
+  color: #1cbe59;
+}
+#contact .phone-icon i {
+  color: #8067f0;
+}
+#contact .form-control {
+  background: transparent;
+  border: 1px solid rgba(214, 219, 229, 0.36);
+}
+#contact .common-btn:hover {
+  color: var(--color-white);
+  background: transparent;
+}
+/* contact section end  */
 /* footer section start  */
 footer {
   background: #3f4453;
