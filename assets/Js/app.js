@@ -55,3 +55,4 @@ function preview(element) {
   };
 }
 
+new WOW().init();

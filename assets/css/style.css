@@ -12,6 +12,7 @@
 }
 body {
   background: var(--color-gray);
+  overflow-x: hidden;
 }
 button {
   background: transparent;
